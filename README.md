@@ -49,3 +49,7 @@ python ./scripts/create_measurements.py 1000000000
 ```bash
 go run main.go --file <path_to_file> --version <version>
 ```
+
+## Scoreboard
+
+- **v1**: Time taken to complete the challenge:  3m19.621960181s
