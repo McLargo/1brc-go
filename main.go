@@ -20,7 +20,12 @@ func main() {
 	switch *v {
 	case "v1":
 		fmt.Println("running v1")
-		version.ExecuteV1(*filePath)
+		v1 := version.NewV1()
+		v1.Execute(*filePath)
+	case "v2":
+		fmt.Println("running v2")
+		v2 := version.NewV2()
+		v2.Execute(*filePath)
 	default:
 		panic("version not found")
 	}
