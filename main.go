@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mclargo/1brc/version"
+	"github.com/mclargo/1brc/version1"
+	"github.com/mclargo/1brc/version2"
 )
 
 func main() {
@@ -20,12 +21,13 @@ func main() {
 	switch *v {
 	case "v1":
 		fmt.Println("running v1")
-		v1 := version.NewV1()
+		v1 := version1.NewV1()
 		v1.Execute(*filePath)
 	case "v2":
 		fmt.Println("running v2")
-		v2 := version.NewV2()
+		v2 := version2.NewV2()
 		v2.Execute(*filePath)
+
 	default:
 		panic("version not found")
 	}

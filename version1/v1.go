@@ -1,4 +1,4 @@
-package version
+package version1
 
 import (
 	"bufio"
@@ -8,6 +8,11 @@ import (
 	"strconv"
 	"strings"
 )
+
+type station struct {
+	min, max, sum float64
+	total         int32
+}
 
 type VersionV1 struct {
 	stations map[string]station
@@ -76,6 +81,6 @@ func (v *VersionV1) Execute(file string) {
 	v.postProcess()
 }
 
-func NewV1() Version {
+func NewV1() *VersionV1 {
 	return &VersionV1{}
 }
