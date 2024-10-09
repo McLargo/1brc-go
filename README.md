@@ -53,3 +53,4 @@ go run main.go --file <path_to_file> --version <version>
 ## Scoreboard
 
 - **v1**: Time taken to complete the challenge:  3m19.621960181s
+- **v2**: Time taken to complete the challenge:  3m3.186535997s
