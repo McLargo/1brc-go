@@ -7,6 +7,7 @@ import (
 
 	"github.com/mclargo/1brc/version1"
 	"github.com/mclargo/1brc/version2"
+	"github.com/mclargo/1brc/version3"
 )
 
 func main() {
@@ -27,7 +28,10 @@ func main() {
 		fmt.Println("running v2")
 		v2 := version2.NewV2()
 		v2.Execute(*filePath)
-
+	case "v3":
+		fmt.Println("running v3")
+		v3 := version3.NewV3()
+		v3.Execute(*filePath)
 	default:
 		panic("version not found")
 	}
